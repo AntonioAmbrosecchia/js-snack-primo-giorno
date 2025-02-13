@@ -32,6 +32,8 @@ if (firstname.length < secondname.length) {
 
 //Il software deve chiedere per 10 volte all’utente di inserire un numero.
 //Il programma stampa la somma di tutti i numeri inseriti.
+
+/*
 const firstnumber = Number(prompt("tipe a number"));
 const secondnumber = Number(prompt("tipe a number"));
 const thirdnumber = Number(prompt("tipe a number"));
@@ -44,3 +46,35 @@ const ninthnumber = Number(prompt("tipe a number"));
 const tenthnumber = Number(prompt("tipe a number"));
 console.log(firstnumber + secondnumber + thirdnumber + fourthnumber +
     fifthnumber + sixthnumber + seventhnumber + eighthnumber + ninthnumber + tenthnumber);
+*/
+
+// Correzione
+
+/*
+let sum = 0;
+
+for (let index = 0; index < 10; index++) {
+    const userNumber = Number(prompt("tipe a number"));
+    console.log(userNumber);
+    sum += userNumber
+
+}
+
+console.log(sum);
+*/
+
+
+
+//Crea un array vuoto.
+//Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+
+let arrayVuota = []
+
+for (let index = 0; index < 6; index++) {
+    const userNumber = Number(prompt("inserisci un numero"));
+    if (userNumber % 2 !== 0) {
+        console.log(userNumber);
+    }
+
+
+}
